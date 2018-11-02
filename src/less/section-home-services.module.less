@@ -1,0 +1,42 @@
+@import (reference) 'global.less';
+
+.section {
+  .bg(@lightGrey); 
+}
+
+.nav {
+  .center; .w; .plr(var(--h));
+}
+
+.menu {
+  .ib;
+}
+
+.menuItem {
+  .ib; .pad(@xs); .bdb(@bd solid); .bdc(@mediumLightGrey); .cur(pointer);
+  .fw(@bold); .lh(@m); .fs(@p2);
+} 
+
+.activeMenuItem {
+  .bdc(@prime);
+}
+
+.servicesWrap {
+  .bg(@lightGrey);
+}
+
+.service {
+  .plr(var(--h)); .ptb(var(--v));
+}
+
+.inactiveService {
+  .hide;
+}
+
+.serviceInfo {
+  .mw(40rem); .w; .c(@lightGrey);
+}
+
+.serviceDescription {
+  .fs(@p2);
+}

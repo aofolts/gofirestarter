@@ -1,0 +1,58 @@
+@import (reference) 'global.less';
+
+.hero {
+  .h(75rem); .mh(90vh); .c(white);
+  .flex; .aic; .jc(center); .bg(@accent);
+}
+
+.backgroundGradient {
+  .wh; .abs; .bg(linear-gradient(0deg,rgba(0,0,0,0),@accent 90%)); .o(0); .z(2);
+}
+
+.content {
+  .z(10); .w(calc(120rem ~'+' var(--h) ~'+' var(--h))); .pad(var(--h) var(--v)); .mw;
+}
+
+.background {
+  filter: brightness(1); .o(0);
+}
+
+.headline {
+  .ttf(uppercase); .c(@white); .fs(6.5rem); .lh(1.5em);
+}
+
+.headlineStop {
+  .rel; .o(.1);
+
+  &:after {
+    .cnt; .abs; .t(50%); .w; .h(@bd); .bg(white); .l;
+  }
+}
+
+.headlineStart {
+  .block;
+}
+
+.headlineFirestarter {
+  .c(@prime);
+}
+
+.text {
+  .ib;
+}
+
+.comet1 {
+  .abs; .b(-10rem); .l(100%); .w(40rem); .trf(rotate(-45deg));
+}
+
+.comet2 {
+  .abs; .t(@m); .l(100%); .w(30rem); .trf(rotate(-45deg)); .o(.1);
+}
+
+.comet3 {
+  .abs; .t(-10rem); .r; .w(20rem); .trf(rotate(-45deg)); .o(.1);
+}
+
+.comet4 {
+  .abs; .b(-15rem); .r(15rem); .w(25rem); .trf(rotate(-45deg)); .o(.1);
+}
